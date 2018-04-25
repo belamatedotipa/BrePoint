@@ -8,22 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		181697C32077B84600DF872B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697C22077B84600DF872B /* AppDelegate.swift */; };
-		181697C52077B84600DF872B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697C42077B84600DF872B /* FirstViewController.swift */; };
-		181697C72077B84600DF872B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697C62077B84600DF872B /* SecondViewController.swift */; };
+		181697C52077B84600DF872B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697C42077B84600DF872B /* FeedVC.swift */; };
+		181697C72077B84600DF872B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697C62077B84600DF872B /* GroupsVC.swift */; };
 		181697CA2077B84600DF872B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181697C82077B84600DF872B /* Main.storyboard */; };
-		181697CC2077B84600DF872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181697CB2077B84600DF872B /* Assets.xcassets */; };
 		181697CF2077B84600DF872B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181697CD2077B84600DF872B /* LaunchScreen.storyboard */; };
+		181697D72077B92D00DF872B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181697D62077B92D00DF872B /* GoogleService-Info.plist */; };
+		181697DE207A811A00DF872B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697DD207A811A00DF872B /* DataService.swift */; };
+		181697E0207A879200DF872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181697DF207A879200DF872B /* Assets.xcassets */; };
+		181697E2207BEC3100DF872B /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697E1207BEC3100DF872B /* AuthVC.swift */; };
+		181697E4207BEC9F00DF872B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697E3207BEC9F00DF872B /* LoginVC.swift */; };
+		181697E6207BED7200DF872B /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697E5207BED7200DF872B /* InsetTextField.swift */; };
+		181697E8207BF61800DF872B /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697E7207BF61800DF872B /* ShadowView.swift */; };
+		181697EA207BF84600DF872B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697E9207BF84600DF872B /* AuthService.swift */; };
+		181697EC207BF9CE00DF872B /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181697EB207BF9CD00DF872B /* constants.swift */; };
+		18357B4820853AC200A39318 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18357B4720853AC200A39318 /* CreateGroupsVC.swift */; };
+		184164C52080CAB700521556 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164C42080CAB700521556 /* UIViewExt.swift */; };
+		184164C72081142300521556 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164C62081142300521556 /* CreatePostVC.swift */; };
+		184164C920812AAA00521556 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164C820812AAA00521556 /* FeedCell.swift */; };
+		184164CB20812D7500521556 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164CA20812D7500521556 /* Message.swift */; };
+		18B31B162080C72B00F1A477 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B31B152080C72B00F1A477 /* MeVC.swift */; };
+		18FA943D20866F240016D089 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA943C20866F240016D089 /* UserCell.swift */; };
+		18FA943F208CE78D0016D089 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA943E208CE78D0016D089 /* GroupCell.swift */; };
+		18FA9441209089DD0016D089 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA9440209089DC0016D089 /* Group.swift */; };
+		5FC9F33CD0374CCBB0F33C44 /* Pods_brepoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07B316801C4D8064813A7562 /* Pods-brepoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brepoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brepoint/Pods-brepoint.debug.xcconfig"; sourceTree = "<group>"; };
 		181697BF2077B84600DF872B /* brepoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brepoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181697C22077B84600DF872B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181697C42077B84600DF872B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		181697C62077B84600DF872B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		181697C42077B84600DF872B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		181697C62077B84600DF872B /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		181697C92077B84600DF872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		181697CB2077B84600DF872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181697CE2077B84600DF872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181697D02077B84600DF872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181697D62077B92D00DF872B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		181697DD207A811A00DF872B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		181697DF207A879200DF872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181697E1207BEC3100DF872B /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		181697E3207BEC9F00DF872B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		181697E5207BED7200DF872B /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		181697E7207BF61800DF872B /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		181697E9207BF84600DF872B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		181697EB207BF9CD00DF872B /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		18357B4720853AC200A39318 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		184164C42080CAB700521556 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		184164C62081142300521556 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		184164C820812AAA00521556 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		184164CA20812D7500521556 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		18B31B152080C72B00F1A477 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		18FA943C20866F240016D089 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		18FA943E208CE78D0016D089 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		18FA9440209089DC0016D089 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brepoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1F853993EA49A031AB7AA4 /* Pods-brepoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brepoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-brepoint/Pods-brepoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC9F33CD0374CCBB0F33C44 /* Pods_brepoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,8 @@
 			children = (
 				181697C12077B84600DF872B /* brepoint */,
 				181697C02077B84600DF872B /* Products */,
+				23D51DDE13A9C321E5DDE03A /* Pods */,
+				9690F15A2E7292A058AB4C02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +97,89 @@
 		181697C12077B84600DF872B /* brepoint */ = {
 			isa = PBXGroup;
 			children = (
+				181697EB207BF9CD00DF872B /* constants.swift */,
+				181697DC207A7F2200DF872B /* Services */,
+				181697DB207A7F1700DF872B /* Extensions */,
+				181697DA207A7F1100DF872B /* Model */,
+				181697D9207A7F0B00DF872B /* View */,
+				181697D8207A7F0400DF872B /* Controller */,
 				181697C22077B84600DF872B /* AppDelegate.swift */,
-				181697C42077B84600DF872B /* FirstViewController.swift */,
-				181697C62077B84600DF872B /* SecondViewController.swift */,
 				181697C82077B84600DF872B /* Main.storyboard */,
-				181697CB2077B84600DF872B /* Assets.xcassets */,
+				181697DF207A879200DF872B /* Assets.xcassets */,
 				181697CD2077B84600DF872B /* LaunchScreen.storyboard */,
 				181697D02077B84600DF872B /* Info.plist */,
+				181697D62077B92D00DF872B /* GoogleService-Info.plist */,
 			);
 			path = brepoint;
+			sourceTree = "<group>";
+		};
+		181697D8207A7F0400DF872B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181697E1207BEC3100DF872B /* AuthVC.swift */,
+				181697E3207BEC9F00DF872B /* LoginVC.swift */,
+				181697C42077B84600DF872B /* FeedVC.swift */,
+				181697C62077B84600DF872B /* GroupsVC.swift */,
+				18B31B152080C72B00F1A477 /* MeVC.swift */,
+				184164C62081142300521556 /* CreatePostVC.swift */,
+				18357B4720853AC200A39318 /* CreateGroupsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		181697D9207A7F0B00DF872B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				181697E5207BED7200DF872B /* InsetTextField.swift */,
+				181697E7207BF61800DF872B /* ShadowView.swift */,
+				184164C820812AAA00521556 /* FeedCell.swift */,
+				18FA943C20866F240016D089 /* UserCell.swift */,
+				18FA943E208CE78D0016D089 /* GroupCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		181697DA207A7F1100DF872B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				184164CA20812D7500521556 /* Message.swift */,
+				18FA9440209089DC0016D089 /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		181697DB207A7F1700DF872B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184164C42080CAB700521556 /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		181697DC207A7F2200DF872B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				181697DD207A811A00DF872B /* DataService.swift */,
+				181697E9207BF84600DF872B /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		23D51DDE13A9C321E5DDE03A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07B316801C4D8064813A7562 /* Pods-brepoint.debug.xcconfig */,
+				EE1F853993EA49A031AB7AA4 /* Pods-brepoint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9690F15A2E7292A058AB4C02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181697D32077B84600DF872B /* Build configuration list for PBXNativeTarget "brepoint" */;
 			buildPhases = (
+				DC9BA6BEEEA9BB8F7EB94812 /* [CP] Check Pods Manifest.lock */,
 				181697BB2077B84600DF872B /* Sources */,
 				181697BC2077B84600DF872B /* Frameworks */,
 				181697BD2077B84600DF872B /* Resources */,
+				2BA489E115952CE652996FD9 /* [CP] Embed Pods Frameworks */,
+				90D580EC68073E6F27FE1030 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,21 +245,98 @@
 			buildActionMask = 2147483647;
 			files = (
 				181697CF2077B84600DF872B /* LaunchScreen.storyboard in Resources */,
-				181697CC2077B84600DF872B /* Assets.xcassets in Resources */,
+				181697D72077B92D00DF872B /* GoogleService-Info.plist in Resources */,
+				181697E0207A879200DF872B /* Assets.xcassets in Resources */,
 				181697CA2077B84600DF872B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BA489E115952CE652996FD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-brepoint/Pods-brepoint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brepoint/Pods-brepoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D580EC68073E6F27FE1030 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brepoint/Pods-brepoint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9BA6BEEEA9BB8F7EB94812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brepoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181697BB2077B84600DF872B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181697C72077B84600DF872B /* SecondViewController.swift in Sources */,
+				184164C52080CAB700521556 /* UIViewExt.swift in Sources */,
+				181697E2207BEC3100DF872B /* AuthVC.swift in Sources */,
+				181697C72077B84600DF872B /* GroupsVC.swift in Sources */,
+				181697E4207BEC9F00DF872B /* LoginVC.swift in Sources */,
+				18FA943D20866F240016D089 /* UserCell.swift in Sources */,
+				181697EC207BF9CE00DF872B /* constants.swift in Sources */,
+				18FA9441209089DD0016D089 /* Group.swift in Sources */,
+				181697EA207BF84600DF872B /* AuthService.swift in Sources */,
 				181697C32077B84600DF872B /* AppDelegate.swift in Sources */,
-				181697C52077B84600DF872B /* FirstViewController.swift in Sources */,
+				184164C920812AAA00521556 /* FeedCell.swift in Sources */,
+				18FA943F208CE78D0016D089 /* GroupCell.swift in Sources */,
+				18B31B162080C72B00F1A477 /* MeVC.swift in Sources */,
+				181697E8207BF61800DF872B /* ShadowView.swift in Sources */,
+				181697C52077B84600DF872B /* FeedVC.swift in Sources */,
+				181697E6207BED7200DF872B /* InsetTextField.swift in Sources */,
+				18357B4820853AC200A39318 /* CreateGroupsVC.swift in Sources */,
+				184164CB20812D7500521556 /* Message.swift in Sources */,
+				181697DE207A811A00DF872B /* DataService.swift in Sources */,
+				184164C72081142300521556 /* CreatePostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +471,12 @@
 		};
 		181697D42077B84600DF872B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B316801C4D8064813A7562 /* Pods-brepoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = brepoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.brepoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,10 +487,12 @@
 		};
 		181697D52077B84600DF872B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1F853993EA49A031AB7AA4 /* Pods-brepoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = brepoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.brepoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
