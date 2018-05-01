@@ -22,6 +22,7 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,6 +61,9 @@ class LoginVC: UIViewController {
     }
     
     
+    @IBAction func passwordFieldEditingBegin(_ sender: Any) {
+        signInButton.bindToKeyBoard()
+    }
     
     
     

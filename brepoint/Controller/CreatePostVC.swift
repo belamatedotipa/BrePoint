@@ -43,12 +43,12 @@ class CreatePostVC: UIViewController {
     @IBAction func sendButtonPressed(_ sender: Any) {
         if messageTextView.text != nil && isNotPlaceholdertext! {
             sendButton.isEnabled = false
-            DataService.instance.uploadPost(uid: (Auth.auth().currentUser?.uid)!, withMessage: messageTextView.text, withGroupKey: nil) { (success, error) in
+            DataService.instance.uploadPost(uid: (Auth.auth().currentUser?.uid)!, withMessage: messageTextView.text, withGroupKey: nil) { (success) in
                 if success {
                     self.sendButton.isEnabled = true
                     self.dismiss(animated: true, completion: nil)
                 } else {
-                    print(String(describing: error?.localizedDescription))
+                    
                     self.sendButton.isEnabled = true
                 }
             }

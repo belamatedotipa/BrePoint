@@ -30,6 +30,8 @@
 		18FA943D20866F240016D089 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA943C20866F240016D089 /* UserCell.swift */; };
 		18FA943F208CE78D0016D089 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA943E208CE78D0016D089 /* GroupCell.swift */; };
 		18FA9441209089DD0016D089 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA9440209089DC0016D089 /* Group.swift */; };
+		18FA944320909EDD0016D089 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA944220909EDD0016D089 /* GroupFeedCell.swift */; };
+		18FA94452090A0A20016D089 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA94442090A0A20016D089 /* GroupFeedVC.swift */; };
 		5FC9F33CD0374CCBB0F33C44 /* Pods_brepoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		18FA943C20866F240016D089 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		18FA943E208CE78D0016D089 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		18FA9440209089DC0016D089 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		18FA944220909EDD0016D089 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		18FA94442090A0A20016D089 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brepoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1F853993EA49A031AB7AA4 /* Pods-brepoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brepoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-brepoint/Pods-brepoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 				18B31B152080C72B00F1A477 /* MeVC.swift */,
 				184164C62081142300521556 /* CreatePostVC.swift */,
 				18357B4720853AC200A39318 /* CreateGroupsVC.swift */,
+				18FA94442090A0A20016D089 /* GroupFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				184164C820812AAA00521556 /* FeedCell.swift */,
 				18FA943C20866F240016D089 /* UserCell.swift */,
 				18FA943E208CE78D0016D089 /* GroupCell.swift */,
+				18FA944220909EDD0016D089 /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184164C52080CAB700521556 /* UIViewExt.swift in Sources */,
+				18FA94452090A0A20016D089 /* GroupFeedVC.swift in Sources */,
 				181697E2207BEC3100DF872B /* AuthVC.swift in Sources */,
 				181697C72077B84600DF872B /* GroupsVC.swift in Sources */,
 				181697E4207BEC9F00DF872B /* LoginVC.swift in Sources */,
@@ -333,6 +340,7 @@
 				181697E8207BF61800DF872B /* ShadowView.swift in Sources */,
 				181697C52077B84600DF872B /* FeedVC.swift in Sources */,
 				181697E6207BED7200DF872B /* InsetTextField.swift in Sources */,
+				18FA944320909EDD0016D089 /* GroupFeedCell.swift in Sources */,
 				18357B4820853AC200A39318 /* CreateGroupsVC.swift in Sources */,
 				184164CB20812D7500521556 /* Message.swift in Sources */,
 				181697DE207A811A00DF872B /* DataService.swift in Sources */,
@@ -475,8 +483,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWG4H28C65;
 				INFOPLIST_FILE = brepoint/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.brepoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,8 +500,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWG4H28C65;
 				INFOPLIST_FILE = brepoint/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.brepoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -16,7 +16,7 @@ extension UIView {
     
     @objc func keyboardWillChange(_ notification: NSNotification) {
         let duration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
-        let  curve = notification.userInfo![UIKeyboardAnimationCurveUserInfoKey]  as! UInt
+        let curve = notification.userInfo![UIKeyboardAnimationCurveUserInfoKey]  as! UInt
         let beginningFrame = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         let endFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let deltaY = endFrame.origin.y - beginningFrame.origin.y
