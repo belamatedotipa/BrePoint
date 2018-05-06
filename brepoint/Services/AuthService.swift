@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import GoogleSignIn
 
 class AuthService {
     static let instance = AuthService()
@@ -36,5 +37,13 @@ class AuthService {
             
         }
     }
+    
+    //Google Auth
+    
+   
+
+    
+    
 
 }
+

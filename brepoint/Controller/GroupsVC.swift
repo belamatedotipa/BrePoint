@@ -61,7 +61,7 @@ extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         guard let groupFeedVC = storyboard?.instantiateViewController(withIdentifier: "GroupFeedVC") as? GroupFeedVC else {return}        
         groupFeedVC.initData(forGroup: groupsArray[indexPath.row])
-        present(groupFeedVC, animated: true, completion: nil)
+        presentDetail(groupFeedVC)
     }
     
     

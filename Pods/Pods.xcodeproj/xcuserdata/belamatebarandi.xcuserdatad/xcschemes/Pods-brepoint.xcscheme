@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51CD115F57C8AC61B443EFE4D49259AF"
+               BlueprintIdentifier = "48692A4C3C728C8830F5D436F9E7C646"
                BuildableName = "Pods_brepoint.framework"
                BlueprintName = "Pods-brepoint"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "51CD115F57C8AC61B443EFE4D49259AF"
+            BlueprintIdentifier = "48692A4C3C728C8830F5D436F9E7C646"
             BuildableName = "Pods_brepoint.framework"
             BlueprintName = "Pods-brepoint"
             ReferencedContainer = "container:Pods.xcodeproj">

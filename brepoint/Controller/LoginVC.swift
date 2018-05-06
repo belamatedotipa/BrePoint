@@ -14,12 +14,23 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordField: InsetTextField!
     @IBOutlet weak var signInButton: UIButton!
     
+    
+    @IBOutlet weak var buttonBottonConstraint: NSLayoutConstraint!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.delegate = self
         passwordField.delegate = self
-        signInButton.bindToKeyBoard()
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        signInButton.bindToKeyBoard()
+        
     }
 
 
@@ -61,9 +72,7 @@ class LoginVC: UIViewController {
     }
     
     
-    @IBAction func passwordFieldEditingBegin(_ sender: Any) {
-        signInButton.bindToKeyBoard()
-    }
+
     
     
     
@@ -82,4 +91,6 @@ class LoginVC: UIViewController {
 
 }
 
-extension LoginVC: UITextFieldDelegate { }
+extension LoginVC: UITextFieldDelegate {
+    
+}

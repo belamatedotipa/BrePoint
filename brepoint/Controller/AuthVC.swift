@@ -8,11 +8,17 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
-class AuthVC: UIViewController {
+class AuthVC: UIViewController, GIDSignInUIDelegate {
 
+    
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
 
         // Do any additional setup after loading the view.
     }
@@ -36,6 +42,27 @@ class AuthVC: UIViewController {
     }
    
      @IBAction func googleSignInButtonPressed(_ sender: Any) {
+        func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+            // ...
+            if let error = error {
+                // ...
+                return
+            }
+            
+            guard let authentication = user.authentication else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                           accessToken: authentication.accessToken)
+            
+            Auth.auth().signIn(with: credential) { (user, error) in
+                if (error) != nil {
+                    print("Google Authentification Fail")
+                } else {
+                    print("Google Authentification Success")
+                    
+                    
+                }
+            }
+        }
      }
     
     @IBAction func facebookSignInButtonPressed(_ sender: Any) {
