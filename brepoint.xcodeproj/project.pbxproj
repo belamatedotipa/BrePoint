@@ -34,6 +34,8 @@
 		18FA9441209089DD0016D089 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA9440209089DC0016D089 /* Group.swift */; };
 		18FA944320909EDD0016D089 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA944220909EDD0016D089 /* GroupFeedCell.swift */; };
 		18FA94452090A0A20016D089 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA94442090A0A20016D089 /* GroupFeedVC.swift */; };
+		18FD250520A4FAA80030BD27 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD250420A4FAA80030BD27 /* KeyboardNotification.swift */; };
+		18FD250720A4FAB10030BD27 /* KeyboardNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD250620A4FAB10030BD27 /* KeyboardNotificationHelper.swift */; };
 		5FC9F33CD0374CCBB0F33C44 /* Pods_brepoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		18FA9440209089DC0016D089 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		18FA944220909EDD0016D089 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		18FA94442090A0A20016D089 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
+		18FD250420A4FAA80030BD27 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
+		18FD250620A4FAB10030BD27 /* KeyboardNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHelper.swift; sourceTree = "<group>"; };
 		CB99DD43E170C489E14660A2 /* Pods_brepoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brepoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1F853993EA49A031AB7AA4 /* Pods-brepoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brepoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-brepoint/Pods-brepoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +166,8 @@
 		181697DB207A7F1700DF872B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				18FD250420A4FAA80030BD27 /* KeyboardNotification.swift */,
+				18FD250620A4FAB10030BD27 /* KeyboardNotificationHelper.swift */,
 				184164C42080CAB700521556 /* UIViewExt.swift */,
 				18C8F41F209F495C0001CECF /* UIViewControllerExt.swift */,
 			);
@@ -366,7 +372,9 @@
 				18FA944320909EDD0016D089 /* GroupFeedCell.swift in Sources */,
 				18357B4820853AC200A39318 /* CreateGroupsVC.swift in Sources */,
 				184164CB20812D7500521556 /* Message.swift in Sources */,
+				18FD250520A4FAA80030BD27 /* KeyboardNotification.swift in Sources */,
 				181697DE207A811A00DF872B /* DataService.swift in Sources */,
+				18FD250720A4FAB10030BD27 /* KeyboardNotificationHelper.swift in Sources */,
 				184164C72081142300521556 /* CreatePostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
