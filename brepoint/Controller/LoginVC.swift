@@ -14,6 +14,21 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordField: InsetTextField!
     @IBOutlet weak var signInButton: UIButton!
     
+    //Outlets for scroll binding
+    @IBOutlet weak var layoutView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
+    
+    @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet var containerViews: [UIView]!
+    
+    //Variables for binding
+    private var keyboardNotificationManager = KeyboardNotificationManager()
+    
+    private var activeTextField: UITextField?
+    
+    
+    
     
     @IBOutlet weak var buttonBottonConstraint: NSLayoutConstraint!
     
@@ -23,13 +38,30 @@ class LoginVC: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         
+        // Set random colors for containers for better visualisation
+        containerViews.forEach { $0.backgroundColor = UIColor.random() }
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(
+            target: self, action: #selector(hideKeyboard)))
         
         // Do any additional setup after loading the view.
     }
     
+ 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        keyboardNotificationManager.add(subscriber: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        keyboardNotificationManager.remove(subscriber: self)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        signInButton.bindToKeyBoard()
+        //signInButton.bindToKeyBoard()
         
     }
 
@@ -72,6 +104,80 @@ class LoginVC: UIViewController {
     }
     
     
+    // MARK: - Private functions
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+// MARK: - Keyboard Changed Observer
+extension LoginVC: KeyboardChangedObserver {
+    
+    func keyboardFrameChanged(keyboardNotification: KeyboardNotificationProtocol) {
+        let keyboardYPosition = keyboardNotification.keyboardYPosition(inView: layoutView)
+        
+        // Set scroll view bottom constraint
+        scrollViewBottomConstraint.constant = keyboardYPosition
+        
+        UIView.animate(
+            withDuration: keyboardNotification.animationDuration,
+            delay: 0,
+            options: keyboardNotification.keyboardAnimationCurve,
+            animations: { [weak self] in
+                // Animate the constraint
+                self?.view.layoutIfNeeded()
+            }, completion: { [weak self] _ in
+                guard let `self` = self else { return }
+                
+                // Scroll to textfield if not visible
+                
+                let layoutViewRect = self.layoutView.frame
+                let visibleRectHeight = layoutViewRect.size.height - keyboardYPosition
+                
+                if let activeTextFieldSuperview = self.activeTextField?.superview,
+                    visibleRectHeight < activeTextFieldSuperview.frame.maxY {
+                    self.scrollView.setContentOffset(
+                        CGPoint(
+                            x: self.scrollView.contentOffset.x,
+                            y: activeTextFieldSuperview.frame.maxY
+                                - visibleRectHeight),
+                        animated: true)
+                }
+                
+        })
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension LoginVC: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeTextField = textField
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        activeTextField = nil
+    }
+}
+
+// MARK: - Helpers for random color generation
+private extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+private extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(red:   .random(),
+                       green: .random(),
+                       blue:  .random(),
+                       alpha: 1.0)
+    }
+}
+    
+    
 
     
     
@@ -89,8 +195,6 @@ class LoginVC: UIViewController {
     }
     */
 
-}
 
-extension LoginVC: UITextFieldDelegate {
-    
-}
+
+
