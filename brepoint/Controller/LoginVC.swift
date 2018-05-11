@@ -19,6 +19,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     
+    @IBOutlet weak var voidConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet var containerViews: [UIView]!
     
@@ -27,10 +28,6 @@ class LoginVC: UIViewController {
     
     private var activeTextField: UITextField?
     
-    
-    
-    
-    @IBOutlet weak var buttonBottonConstraint: NSLayoutConstraint!
     
 
     override func viewDidLoad() {
@@ -120,6 +117,9 @@ extension LoginVC: KeyboardChangedObserver {
         
         // Set scroll view bottom constraint
         scrollViewBottomConstraint.constant = keyboardYPosition
+        
+        //Decrease 
+        voidConstraint.constant -= keyboardYPosition
         
         UIView.animate(
             withDuration: keyboardNotification.animationDuration,
